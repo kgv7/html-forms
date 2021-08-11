@@ -37,31 +37,92 @@
         <h2>Order Form</h2>
 
         <form>
-            <label>Your name </label>
-            <input type="text" name="name">
+            <label 
+                for="name">
+                Your name 
+            </label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name">
             <br>
-            <label>Who are we sending this to?</label>
-            <input type="text" name="recipient">
+
+            <label 
+                for="recipient">
+                Who are we sending this to?
+            </label>
+            <input 
+                type="text" 
+                id="name" 
+                name="recipient">
             <br>
-            <label>Choose a melon:</label>
+
+            <label 
+                for="melon-choice">
+                Choose a melon:
+            </label>
             <select name="melon">
-                <option value="watermelon">Watermelon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
+                <option 
+                    id ="melon-choice" 
+                    value="watermelon">
+                    Watermelon
+                </option>
+                <option 
+                    id ="melon-choice" 
+                    value="cantaloupe">
+                    Cantaloupe
+                </option>
+                <option 
+                    id ="melon-choice" 
+                    value="honeydew">
+                    Honeydew
+                </option>
             </select>
             <br>
-            <label>When should we deliver?</label>
-                <input type="radio" name="time" value="am"> Morning
-                <input type="radio" name="time" value="pm">Evening
-                <input type="radio" name="time" value="any">Any time
+            <label for="delivery-time">When should we deliver?</label>
+                <input 
+                    type="radio" 
+                    id="delivery-time" 
+                    name="time" 
+                    value="am"> 
+                    Morning
+                <input 
+                    type="radio" 
+                    id="delivery-time" 
+                    name="time" 
+                    value="pm">
+                    Evening
+                <input 
+                    type="radio" 
+                    id="delivery-time" 
+                    name="time" 
+                    value="any">
+                    Any time
             <br>
-            <label>Enter your message:</label>
-            <textarea name="message"></textarea>
+            <label 
+                for="message">
+                Enter your message:
+            </label>
+            <textarea 
+                id="message" 
+                name="message">
+            </textarea>
             <br>
-            <label>Subscribe to our newsletter</label>
-            <input type="checkbox" name="subscribe" value="yes">
+
+            <label 
+                for="newsletter">
+                Subscribe to our newsletter
+            </label>
+            <input 
+                type="checkbox" 
+                name="subscribe" 
+                id="newsletter" 
+                value="yes">
             <br>
-            <button type="submit">Submit</button>
+            <button 
+                type="submit">
+                Submit
+            </button>
         </form>
 </body>
 </html>
