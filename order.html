@@ -30,35 +30,37 @@
             </tr>
             <tr>
                 <td>Honeydew</td> 
-                <td>$1,750,00.00</td>
+                <td>$1,750.00</td>
             </tr>
         </table>
 
         <h2>Order Form</h2>
 
         <form>
-            <input type="text" name="name">Your name
-
-            <input type="text" name="recipient">Who are we sending this to?
-
+            <label>Your name </label>
+            <input type="text" name="name">
+            <br>
+            <label>Who are we sending this to?</label>
+            <input type="text" name="recipient">
+            <br>
             <label>Choose a melon:</label>
             <select name="melon">
                 <option value="watermelon">Watermelon</option>
                 <option value="canteloupe">Canteloupe</option>
                 <option value="honeydew">Honeydew</option>
             </select>
-
+            <br>
             <label>When should we deliver?</label>
                 <input type="radio" name="time" value="am"> Morning
                 <input type="radio" name="time" value="pm">Evening
                 <input type="radio" name="time" value="any">Any time
-
+            <br>
             <label>Enter your message:</label>
             <textarea name="message"></textarea>
-
+            <br>
             <label>Subscribe to our newsletter</label>
             <input type="checkbox" name="subscribe" value="yes">
-
+            <br>
             <button type="submit">Submit</button>
         </form>
 </body>
