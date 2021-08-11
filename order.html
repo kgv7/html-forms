@@ -5,124 +5,148 @@
     </head>
 
     <body>
-       <h1>Order a Melongram</h1> 
-        <p>
-            There's no better way to show a loved one you care than with a Melongram.
-        </p>
+        <header>
+            <h1>Order a Melongram</h1> 
+            <p>
+                There's no better way to show a loved one you care than with a Melongram.
+            </p>
+        
+            <p>
+                Each Melongram comes with a custom message printed on high-quality cardstock
+                and your choice of a hand-picked, premium melon.
+            </p>
+        </header>
 
-        <p>
-            Each Melongram comes with a custom message printed on high-quality cardstock
-            and your choice of a hand-picked, premium melon.
-        </p>
-        <h2>Melon Options</h2>
+        <section>
 
-        <p>
-            Choose from one of these melons:
-        </p>
-        <table>
-            <tr>
-                <td>Watermelon</td> 
-                <td>$1,200.00</td>
-            </tr>
-            <tr>
-                <td>Canteloupe</td> 
-                <td>$400.00</td>
-            </tr>
-            <tr>
-                <td>Honeydew</td> 
-                <td>$1,750.00</td>
-            </tr>
-        </table>
+            <h2>Melon Options</h2>
 
-        <h2>Order Form</h2>
+            <p>
+                Choose from one of these melons:
+            </p>
+            <table>
+                <tr>
+                    <td>Watermelon</td> 
+                    <td>$1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Cantaloupe</td> 
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Honeydew</td> 
+                    <td>$1,750.00</td>
+                </tr>
+            </table>
+        </section>
 
-        <form>
-            <label 
-                for="name">
-                Your name 
-            </label>
-            <input 
-                type="text" 
-                id="name" 
-                name="name">
-            <br>
+        <section>
+            <h2>Order Form</h2>
 
-            <label 
-                for="recipient">
-                Who are we sending this to?
-            </label>
-            <input 
-                type="text" 
-                id="name" 
-                name="recipient">
-            <br>
-
-            <label 
-                for="melon-choice">
-                Choose a melon:
-            </label>
-            <select name="melon">
-                <option 
-                    id ="melon-choice" 
-                    value="watermelon">
-                    Watermelon
-                </option>
-                <option 
-                    id ="melon-choice" 
-                    value="cantaloupe">
-                    Cantaloupe
-                </option>
-                <option 
-                    id ="melon-choice" 
-                    value="honeydew">
-                    Honeydew
-                </option>
-            </select>
-            <br>
-            <label for="delivery-time">When should we deliver?</label>
+            <form>
+                <label 
+                    for="name">
+                    Your name 
+                </label>
                 <input 
-                    type="radio" 
-                    id="delivery-time" 
-                    name="time" 
-                    value="am"> 
-                    Morning
-                <input 
-                    type="radio" 
-                    id="delivery-time" 
-                    name="time" 
-                    value="pm">
-                    Evening
-                <input 
-                    type="radio" 
-                    id="delivery-time" 
-                    name="time" 
-                    value="any">
-                    Any time
-            <br>
-            <label 
-                for="message">
-                Enter your message:
-            </label>
-            <textarea 
-                id="message" 
-                name="message">
-            </textarea>
-            <br>
+                    type="text" 
+                    id="name" 
+                    name="name">
+                <br><br>
 
-            <label 
-                for="newsletter">
-                Subscribe to our newsletter
-            </label>
-            <input 
-                type="checkbox" 
-                name="subscribe" 
-                id="newsletter" 
-                value="yes">
-            <br>
-            <button 
-                type="submit">
-                Submit
-            </button>
-        </form>
+                <label 
+                    for="recipient">
+                    Who are we sending this to?
+                </label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="recipient">
+                <br><br>
+
+                <label 
+                    for="melon-choice">
+                    Choose a melon:
+                </label>
+                <select name="melon">
+                    <option 
+                        id ="melon-choice" 
+                        value="watermelon">
+                        Watermelon
+                    </option>
+                    <option 
+                        id ="melon-choice" 
+                        value="cantaloupe">
+                        Cantaloupe
+                    </option>
+                    <option 
+                        id ="melon-choice" 
+                        value="honeydew">
+                        Honeydew
+                    </option>
+                </select>
+                <br><br>
+
+            
+                <fieldset>
+                <legend>When should we deliver?</legend>
+                    <input 
+                        type="radio" 
+                        id="am" 
+                        name="time" 
+                        value="am"> 
+                        <label
+                            for ="am">
+                            Morning
+                        </label>
+                    <input 
+                        type="radio" 
+                        id="delivery-time" 
+                        name="time" 
+                        value="pm">
+                        <label
+                            for="pm">
+                            Evening
+                        </label>
+                    <input 
+                        type="radio" 
+                        id="delivery-time" 
+                        name="time" 
+                        value="any">
+                        <label
+                            for="any">
+                            Any time
+                        </label>
+                        
+                </fieldset>
+                <br><br>
+
+                <label 
+                    for="message">
+                    Enter your message:
+                </label>
+                <textarea 
+                    id="message" 
+                    name="message">
+                </textarea>
+                <br><br>
+
+                <label 
+                    for="newsletter">
+                    Subscribe to our newsletter
+                </label>
+                <input 
+                    type="checkbox" 
+                    name="subscribe" 
+                    id="newsletter" 
+                    value="yes">
+                <br><br>
+
+                <button 
+                    type="submit">
+                    Submit
+                </button>
+            </form>
+        </section>
 </body>
 </html>
